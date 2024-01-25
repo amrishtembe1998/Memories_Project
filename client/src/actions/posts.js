@@ -23,3 +23,11 @@ export const createPost = (post) => async (dispatch) => {
     console.log(error.message);
   }
 };
+
+export const updatePost = (id, post) => async (dispatch) => {
+  try {
+    await api.updatePost(id, post)
+  } catch (error) {
+    
+  }
+};
