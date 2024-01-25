@@ -10,7 +10,7 @@ import useStyles from "./styles";
 const App = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
-  const [currentId, setCurrentId] = useState(null)
+  const [currentId, setCurrentId] = useState(null);
   useEffect(() => {
     dispatch(getPosts());
   }, [currentId, dispatch]);
@@ -26,6 +26,7 @@ const App = () => {
         <Container>
           <Grid
             container
+            className={classes.mainContainer}
             justifyContent="space-between"
             alignItems="stretch"
             spacing={3}
