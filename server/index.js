@@ -14,7 +14,7 @@ app.use(cors());
 
 app.use("/posts", postRoutes);
 
-app.get("/", (req, res) => res.send("Hi this is Memories App"));
+app.get("/", (req, res) => res.send("Hi this is Memories App!"));
 const PORT = process.env.PORT || 5000;
 
 mongoose
